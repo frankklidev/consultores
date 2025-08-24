@@ -29,7 +29,6 @@ export default function Events({
   return (
     <section className={["relative", className].join(" ")}>
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        {/* Encabezado */}
         <div className="mb-8 text-center">
           <span className="inline-flex items-center gap-2 text-sm tracking-widest text-indigo-600">
             <span className="h-px w-6 bg-indigo-200" />

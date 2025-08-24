@@ -33,7 +33,7 @@ export default function Hero({
   };
   const next = () => goTo(active + 1);
 
-  // Autoplay infinito
+
   useEffect(() => {
     if (!autoPlay || slides.length <= 1) return;
     timerRef.current = window.setTimeout(() => {
@@ -57,7 +57,7 @@ export default function Hero({
       aria-roledescription="carrusel"
       aria-label="Destacados"
     >
-      {/* Imagen de fondo */}
+
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
           <motion.div
@@ -78,7 +78,6 @@ export default function Hero({
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10" />
       </div>
 
-      {/* Contenido siempre centrado */}
       <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl px-4 md:px-6">
         <div className="flex w-full flex-col justify-center items-center text-center gap-4 md:gap-6">
           <h1 className="text-3xl font-bold leading-tight text-white drop-shadow md:text-5xl">
@@ -104,7 +103,7 @@ export default function Hero({
         </div>
       </div>
 
-      {/* Texto accesibilidad */}
+
       <span className="sr-only" aria-live="polite">
         Slide {active + 1} de {slides.length}
       </span>

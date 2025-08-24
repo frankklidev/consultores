@@ -17,11 +17,11 @@ import {
 export default function Footer() {
   return (
     <footer className="relative mt-16 border-t border-white/10 bg-gradient-to-b from-slate-900 to-slate-950 text-slate-200">
-      {/* Glow top */}
+
       <div className="pointer-events-none absolute -top-6 left-0 right-0 h-6 bg-gradient-to-b from-blue-500/20 to-transparent blur-2xl" />
 
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
-        {/* Top: Brand + CTA */}
+
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-3">
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-lg ring-1 ring-white/10">
-              {/* Ícono sello notarial */}
+
               <Scale className="h-5 w-5" aria-hidden />
             </span>
             <div className="leading-tight">
@@ -54,9 +54,9 @@ export default function Footer() {
           </a>
         </motion.div>
 
-        {/* Grid */}
+
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-          {/* Col 1: Acerca */}
+
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Col 2: Servicios/Apoyos */}
+
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Col 3: Académico / Comunicación */}
+
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +126,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Col 4: Contacto + Social */}
+
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ export default function Footer() {
               </Social>
             </div>
 
-            {/* mini newsletter (opcional) */}
+
             <form
               onSubmit={(e) => e.preventDefault()}
               className="mt-5 rounded-xl border border-white/10 bg-white/5 p-2 ring-1 ring-white/5"
@@ -197,10 +197,9 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Divider */}
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-        {/* Bottom bar */}
+
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <p className="text-xs text-slate-400">
             © {new Date().getFullYear()} Colegio de Notarios de la Ciudad de
@@ -217,7 +216,7 @@ export default function Footer() {
   );
 }
 
-/* ---------- Helpers ---------- */
+
 
 function FooterLink({
   href,

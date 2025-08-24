@@ -19,19 +19,19 @@ export default function UbicaNotariaFlyout({
   const [numero, setNumero] = useState("");
   const [alcaldia, setAlcaldia] = useState("");
   const [colonia, setColonia] = useState("");
-  const [busqueda, setBusqueda] = useState(""); // <- NUEVO
+  const [busqueda, setBusqueda] = useState(""); 
 
   const limpiar = () => {
     setNombre("");
     setNumero("");
     setAlcaldia("");
     setColonia("");
-    setBusqueda(""); // <- limpiar también la barra
+    setBusqueda("");
     onClear?.();
   };
 
   const buscar = () => {
-    // Si no llenan "Nombre", usa lo que escriban en la barra de búsqueda
+
     const filters = {
       nombre: nombre || busqueda,
       numero,
@@ -43,9 +43,8 @@ export default function UbicaNotariaFlyout({
 
   return (
     <div className="sm:col-span-2">
-      {/* Tarjeta principal */}
+
       <div className="w-[min(92vw,780px)] rounded-2xl border border-slate-200 bg-white shadow-2xl">
-        {/* Encabezado */}
         <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-4">
           <div className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
             <MapPin className="h-4 w-4" />
@@ -60,7 +59,6 @@ export default function UbicaNotariaFlyout({
           </div>
         </div>
 
-        {/* Formulario */}
         <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2">
           <div className="space-y-1.5">
             <FieldLabel>NOMBRE</FieldLabel>
@@ -100,9 +98,9 @@ export default function UbicaNotariaFlyout({
             />
           </div>
 
-          {/* Barra inferior */}
+
           <div className="col-span-1 mt-2 flex flex-wrap items-center justify-between gap-3 sm:col-span-2">
-            {/* AHORA ES UN INPUT REAL */}
+
             <div className="relative flex-1 min-w-0">
               <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
               <input
@@ -148,7 +146,7 @@ export default function UbicaNotariaFlyout({
   );
 }
 
-/* ------------------- Sub-componentes ------------------- */
+
 function FieldLabel({ children }: { children: React.ReactNode }) {
   return (
     <span className="text-[11px] uppercase tracking-wide font-semibold text-slate-700">
@@ -205,7 +203,6 @@ function SelectBase({
   );
 }
 
-/* ------------------- Datos ------------------- */
 const ALCALDIAS = [
   "Álvaro Obregón",
   "Azcapotzalco",

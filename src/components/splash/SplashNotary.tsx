@@ -32,7 +32,7 @@ export default function SplashNotary({
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.45 } }}
         >
-          {/* Tarjeta central */}
+
           <motion.div
             className="relative w-[min(86vw,520px)] h-[min(70vh,380px)] rounded-xl shadow-2xl overflow-hidden border border-neutral-200/60 dark:border-white/10"
             initial={{ y: 10, scale: 0.98, opacity: 0 }}
@@ -43,22 +43,21 @@ export default function SplashNotary({
               transition: { duration: 0.4 },
             }}
           >
-            {/* Fondo de imagen dentro del cuadro */}
+
             {bgImage && (
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${bgImage})` }}
               />
             )}
-            {/* Overlay oscuro encima de la foto */}
+     
             <div
               className="absolute inset-0"
               style={{ background: `rgba(0,0,0,${overlayOpacity})` }}
             />
 
-            {/* Contenido animado encima */}
             <div className="relative w-full h-full p-6">
-              {/* Marca arriba */}
+        
               <div className="absolute top-5 left-6 right-6 flex items-center justify-between text-white">
                 <div className="tracking-wide font-medium">{brand}</div>
                 <motion.svg
@@ -83,7 +82,7 @@ export default function SplashNotary({
                 </motion.svg>
               </div>
 
-              {/* Firma */}
+     
               <motion.svg
                 viewBox="0 0 600 220"
                 className="absolute inset-0 m-auto w-[88%] h-[58%] top-[22%]"
@@ -123,7 +122,7 @@ export default function SplashNotary({
                 />
               </motion.svg>
 
-              {/* Sello */}
+         
               <motion.div
                 className="absolute bottom-8 right-8"
                 initial={
@@ -159,7 +158,7 @@ export default function SplashNotary({
                 </div>
               </motion.div>
 
-              {/* Pie */}
+     
               <div className="absolute bottom-4 left-6 right-6 text-[11px] text-neutral-200">
                 Preparando documentos…
               </div>

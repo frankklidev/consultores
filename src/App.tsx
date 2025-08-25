@@ -30,7 +30,7 @@ export default function App() {
       <SplashNotary
         show={show}
         onFinish={() => setShow(false)}
-        brand='Notaría & Asociados'
+        brand='Colegio de Notarios'
         bgImage={imagen}
         overlayOpacity={0.5}
       />

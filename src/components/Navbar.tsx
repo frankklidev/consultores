@@ -371,7 +371,7 @@ export default function Navbar() {
               Colegio de Notarios
             </span>
             <span className='block text-[11px] text-slate-200'>
-              Ciudad de México
+              Estado de México
             </span>
           </div>
         </a>

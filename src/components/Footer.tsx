@@ -36,7 +36,7 @@ export default function Footer() {
             </span>
             <div className="leading-tight">
               <div className="text-base font-semibold text-white">
-                Colegio de Notarios — Ciudad de México
+                Colegio de Notarios — Estado de México
               </div>
               <div className="text-xs text-slate-400">
                 Seguridad jurídica, cercanía y servicio.
@@ -67,7 +67,7 @@ export default function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
               Promovemos la función notarial con excelencia, ética y cercanía,
               ofreciendo orientación a la ciudadanía y fortaleciendo la certeza
-              jurídica en la Ciudad de México.
+              jurídica en el Estado de México.
             </p>
 
             <ul className="mt-4 space-y-2 text-sm">
@@ -202,7 +202,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} Colegio de Notarios de la Ciudad de
+            © {new Date().getFullYear()} Colegio de Notarios del Estado
             México. Todos los derechos reservados.
           </p>
           <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-slate-400">
